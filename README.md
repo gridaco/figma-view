@@ -69,5 +69,33 @@ export function FigmaDesignMock(){
 ```
 
 
+## Authentication
+```tsx
+import FigmaView, { FigmaAuthenticationProvider } from "figma-view"
+
+const _figma_personal_access_token = process.env.FIGMA_PERSONAL_ACCESSTOKEN;
+
+export default function (){
+  return (
+    <FigmaAuthenticationProvider personalAccessToken={_figma_personal_access_token}>
+      <FigmaView url="https://figma.com/files/xxxx?node-id=xxx"/>
+    </FigmaAuthenticationProvider>
+  );
+}
+
+// or with access token (not personal access token)
+// issue of access token is not done by this package. you can use `@design-sdk/figma-oauth` for that.
+
+export default function (){
+  return (
+    <FigmaAuthenticationProvider accessToken={accesstoken}>
+      <FigmaView url="https://figma.com/files/xxxx?node-id=xxx"/>
+    </FigmaAuthenticationProvider>
+  );
+}
+
+```
+
+
 ### References
 - [design-sdk](https://github.com/gridaco/design-sdk)
