@@ -2,6 +2,16 @@
 # yarn lockfile v1
 
 
+"@design-sdk/figma-remote-types@^0.0.5":
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/@design-sdk/figma-remote-types/-/figma-remote-types-0.0.5.tgz#df11049c02eb48a15b30d1e8bdafee66bc5160e6"
+  integrity sha512-I2Kk+jlN0jZWRVJDKNUXWpH03KuyaQiGr+LS3LN6Y4W1JGhTTjqzZIc44LNjNFLFAMxZLWs4Tuv188dB5qN7GQ==
+
+"@design-sdk/figma-types@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@design-sdk/figma-types/-/figma-types-0.0.1.tgz#19f9691c3c084a071282def79a1b485ad389b562"
+  integrity sha512-KchmWy5a839/Z7EH9b9VtGJCmgzvmsneCB1ndMebJ29N4G3ClZhG4u7Z8gXESUET+vTklp/mkjpNkTbq+nHPmg==
+
 "js-tokens@^3.0.0 || ^4.0.0":
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"

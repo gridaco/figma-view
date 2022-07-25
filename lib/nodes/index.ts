@@ -1,0 +1,10 @@
+export { FigmaEllipseNode } from "./ellipse";
+export { FigmaFrameNode } from "./frame";
+export { FigmaGroupNode } from "./group";
+export { FigmaInstanceNode } from "./instance";
+export { FigmaLineNode } from "./line";
+export { FigmaPolygonNode } from "./polygon";
+export { FigmaRectangleNode } from "./rectangle";
+export { FigmaStarNode } from "./star";
+export { FigmaTextNode } from "./text";
+export { FigmaVectorNode } from "./vector";
