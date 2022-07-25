@@ -97,5 +97,11 @@ export default function (){
 ```
 
 
+### Custom document provider (Proxy server)
+You can host up your own proxy server for your needs with [figma-file-proxy-server](https://github.com/gridaco/figma-file-proxy-server)
+
+
 ### References
 - [design-sdk](https://github.com/gridaco/design-sdk)
+
+
