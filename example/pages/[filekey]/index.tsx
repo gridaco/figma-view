@@ -42,7 +42,7 @@ export default function FileIndexPage({
 export async function getServerSideProps(context: GetServerSidePropsContext) {
   const filekey = context.params?.filekey as string;
   const client = Axios.create({
-    baseURL: "http://localhost:3000/api",
+    baseURL: "http://localhost:7777/api",
   });
   const { data } = await client.get(`/${filekey}`);
   return {

@@ -13,7 +13,13 @@ import {
   FigmaInstanceNode,
 } from "./nodes";
 
-export function FigmaView(node: SceneNode) {
+export function FigmaView({
+  data: node,
+  style = {},
+}: {
+  data: SceneNode;
+  style?: React.CSSProperties;
+}) {
   switch (node.type) {
     case "BOOLEAN_OPERATION":
       return <></>;
@@ -24,7 +30,7 @@ export function FigmaView(node: SceneNode) {
     case "CONNECTOR":
       return <></>;
     case "FRAME":
-      return <FigmaFrameNode {...node} />;
+      return <FigmaFrameNode data={node} style={style} />;
     case "GROUP":
       return <FigmaGroupNode {...node} />;
     case "ELLIPSE":
@@ -36,7 +42,7 @@ export function FigmaView(node: SceneNode) {
     case "POLYGON":
       return <FigmaPolygonNode {...node} />;
     case "RECTANGLE":
-      return <FigmaRectangleNode {...node} />;
+      return <FigmaRectangleNode data={node} style={style} />;
     case "SHAPE_WITH_TEXT":
       return <></>;
     case "SLICE":
@@ -48,7 +54,7 @@ export function FigmaView(node: SceneNode) {
     case "STICKY":
       return <></>;
     case "TEXT":
-      return <FigmaTextNode {...node} />;
+      return <FigmaTextNode data={node} style={style} />;
     case "VECTOR":
       return <FigmaVectorNode {...node} />;
   }

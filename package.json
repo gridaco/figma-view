@@ -1,0 +1,12 @@
+{
+  "name": "workspace",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "yarn workspace example dev"
+  },
+  "workspaces": [
+    "example",
+    "packages/*"
+  ]
+}

@@ -3,24 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 7777",
     "build": "next build",
-    "start": "next start"
+    "start": "next start -p 7777"
   },
   "dependencies": {
+    "@design-sdk/figma": "^0.0.43",
     "axios": "^1.3.3",
-    "figma-view": "../",
+    "figma-view": "*",
     "glob": "^8.1.0",
-    "next": "12.2.3",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "next": "^13.1.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/glob": "^8.0.1",
     "@types/node": "^18.6.1",
-    "@types/react": "18.0.15",
-    "next-compose-plugins": "^2.2.1",
-    "next-transpile-modules": "^9.0.0",
-    "typescript": "4.7.4"
+    "@types/react": "^18.0.28",
+    "typescript": "^4.9.5"
   }
 }

@@ -24,8 +24,8 @@
     "react": "*"
   },
   "devDependencies": {
-    "@design-sdk/figma-remote-types": "^0.0.5",
-    "@design-sdk/figma-types": "^0.0.1",
+    "@design-sdk/figma-remote-types": "^0.0.43",
+    "@design-sdk/figma-types": "^0.0.43",
     "react": "^18.2.0"
   }
 }
