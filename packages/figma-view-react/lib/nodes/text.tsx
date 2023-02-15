@@ -1,13 +1,6 @@
 import React from "react";
-import type { TextNode } from "@design-sdk/figma-types";
-
-export function FigmaTextNode({
-  data,
-  style = {},
-}: {
-  data: TextNode;
-  style?: React.CSSProperties;
-}) {
+import type { NodeViewProps, TextNode } from "./types";
+export function FigmaTextNode({ data, style = {} }: NodeViewProps<TextNode>) {
   const { x, y, characters, fills } = data;
   const color = fills?.[0]?.color ?? { r: 0, g: 0, b: 0, a: 0 };
 

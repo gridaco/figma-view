@@ -1,7 +1,8 @@
 import React from "react";
-import type { StarNode } from "@design-sdk/figma-types";
+import type { NodeViewProps, StarNode } from "./types";
 
-export function FigmaStarNode({ type, name }: StarNode) {
+export function FigmaStarNode({ data }: NodeViewProps<StarNode>) {
+  const { type, name } = data;
   return (
     <>
       {type} : {name}

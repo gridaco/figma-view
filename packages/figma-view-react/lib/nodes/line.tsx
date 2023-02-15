@@ -1,6 +1,6 @@
 import React from "react";
-import type { LineNode } from "@design-sdk/figma-types";
+import type { NodeViewProps, LineNode } from "./types";
 
-export function FigmaLineNode({ type, name }: LineNode) {
+export function FigmaLineNode({ data }: NodeViewProps<LineNode>) {
   return <></>;
 }

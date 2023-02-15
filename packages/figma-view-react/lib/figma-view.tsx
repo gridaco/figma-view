@@ -20,6 +20,10 @@ export function FigmaView({
   data: SceneNode;
   style?: React.CSSProperties;
 }) {
+  const passprops = {
+    style: style,
+  };
+
   switch (node.type) {
     case "BOOLEAN_OPERATION":
       return <></>;
@@ -30,17 +34,17 @@ export function FigmaView({
     case "CONNECTOR":
       return <></>;
     case "FRAME":
-      return <FigmaFrameNode data={node} style={style} />;
+      return <FigmaFrameNode data={node} {...passprops} />;
     case "GROUP":
-      return <FigmaGroupNode {...node} />;
+      return <FigmaGroupNode data={node} {...passprops} />;
     case "ELLIPSE":
-      return <FigmaEllipseNode {...node} />;
+      return <FigmaEllipseNode data={node} {...passprops} />;
     case "INSTANCE":
-      return <FigmaInstanceNode {...node} />;
+      return <FigmaInstanceNode data={node} {...passprops} />;
     case "LINE":
-      return <FigmaLineNode {...node} />;
+      return <FigmaLineNode data={node} {...passprops} />;
     case "POLYGON":
-      return <FigmaPolygonNode {...node} />;
+      return <FigmaPolygonNode data={node} {...passprops} />;
     case "RECTANGLE":
       return <FigmaRectangleNode data={node} style={style} />;
     case "SHAPE_WITH_TEXT":
@@ -50,13 +54,13 @@ export function FigmaView({
     case "STAMP":
       return <></>;
     case "STAR":
-      return <FigmaStarNode {...node} />;
+      return <FigmaStarNode data={node} {...passprops} />;
     case "STICKY":
       return <></>;
     case "TEXT":
-      return <FigmaTextNode data={node} style={style} />;
+      return <FigmaTextNode data={node} {...passprops} />;
     case "VECTOR":
-      return <FigmaVectorNode {...node} />;
+      return <FigmaVectorNode data={node} {...passprops} />;
   }
 }
 

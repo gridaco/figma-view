@@ -1,7 +1,9 @@
 import React from "react";
-import type { InstanceNode } from "@design-sdk/figma-types";
+import type { NodeViewProps, InstanceNode } from "./types";
 
-export function FigmaInstanceNode({ type, name }: InstanceNode) {
+export function FigmaInstanceNode({ data }: NodeViewProps<InstanceNode>) {
+  const { type, name } = data;
+
   return (
     <>
       {type} : {name}

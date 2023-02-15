@@ -1,13 +1,10 @@
 import React from "react";
-import type { RectangleNode } from "@design-sdk/figma-types";
+import type { NodeViewProps, RectangleNode } from "./types";
 
 export function FigmaRectangleNode({
   data,
   style,
-}: {
-  data: RectangleNode;
-  style?: React.CSSProperties;
-}) {
+}: NodeViewProps<RectangleNode>) {
   const { x, y, width, height, fills } = data;
   const color = fills?.[0]?.color ?? { r: 0, g: 0, b: 0, a: 0 };
 

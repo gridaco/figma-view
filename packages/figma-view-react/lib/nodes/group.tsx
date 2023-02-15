@@ -1,7 +1,8 @@
 import React from "react";
-import { GroupNode } from "@design-sdk/figma-types";
+import type { NodeViewProps, GroupNode } from "./types";
 
-export function FigmaGroupNode({ type, name }: GroupNode) {
+export function FigmaGroupNode({ data }: NodeViewProps<GroupNode>) {
+  const { type, name } = data;
   return (
     <>
       {type} : {name}

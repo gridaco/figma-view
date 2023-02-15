@@ -1,7 +1,8 @@
 import React from "react";
-import type { EllipseNode } from "@design-sdk/figma-types";
+import type { NodeViewProps, EllipseNode } from "./types";
 
-export function FigmaEllipseNode({ type, name }: EllipseNode) {
+export function FigmaEllipseNode({ data }: NodeViewProps<EllipseNode>) {
+  const { type, name } = data;
   return (
     <>
       {type} : {name}

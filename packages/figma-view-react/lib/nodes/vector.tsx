@@ -1,7 +1,8 @@
 import React from "react";
-import type { VectorNode } from "@design-sdk/figma-types";
+import type { NodeViewProps, VectorNode } from "./types";
 
-export function FigmaVectorNode({ type, name }: VectorNode) {
+export function FigmaVectorNode({ data }: NodeViewProps<VectorNode>) {
+  const { type, name } = data;
   return (
     <>
       {type} : {name}

@@ -1,14 +1,8 @@
 import React from "react";
-import type { FrameNode } from "@design-sdk/figma-types";
 import { FigmaView } from "../figma-view";
+import type { NodeViewProps, FrameNode } from "./types";
 
-export function FigmaFrameNode({
-  data,
-  style = {},
-}: {
-  data: FrameNode;
-  style?: React.CSSProperties;
-}) {
+export function FigmaFrameNode({ data, style = {} }: NodeViewProps<FrameNode>) {
   const { children, fills, x, y, width, height, parent } = data;
   const { color } = fills?.[0] ?? {};
   const { r, g, b, a } = color ?? {};
