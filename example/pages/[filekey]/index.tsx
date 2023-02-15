@@ -26,9 +26,9 @@ export default function FileIndexPage({
             return (
               <li key={id}>
                 <Link href={`/${filekey}/${id}`}>
-                  <a>
+                  <p>
                     {name} ({type} / {id})
-                  </a>
+                  </p>
                 </Link>
               </li>
             );
