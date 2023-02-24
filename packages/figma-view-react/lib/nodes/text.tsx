@@ -81,6 +81,7 @@ export function FigmaTextNode({ data, style = {} }: NodeViewProps<TextNode>) {
         verticalAlign: _textAlignVertical,
         fontVariantCaps: smallCaps,
         letterSpacing: letterSpacing.value,
+        whiteSpace: "pre-wrap",
         lineHeight:
           lineHeight.unit === "AUTO" ? "normal" : lineHeight.value + "px",
         textDecoration: _textDecoration,
@@ -114,7 +115,6 @@ function fitHandler(width: number, height: number, textAutoResize: string) {
         height: height,
         overflow: "hidden",
         textOverflow: "ellipsis",
-        whiteSpace: "nowrap",
       };
       break;
     case "NONE":
