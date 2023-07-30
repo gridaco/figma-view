@@ -16,7 +16,7 @@ draws figma document on html5 canvas
 
 **iframe-backend**
 
-A simlpe figma embeding wrapper
+A simple figma embedding wrapper
 
 
 ## Usage
@@ -28,12 +28,12 @@ import React from "react"
 import FigmaView from "figma-view"
 
 // with url
-export default funtion (){
+export default function (){
   return <FigmaView url="https://figma.com/files/xxx?node-id=xxx" fallback={<>Loading..</>} cached/>
 }
 
 // with data json
-export default funtion (){
+export default function (){
   return <FigmaView data={frameNode} fallback={<>Loading..</>} fromapi/>
 }
 ```
